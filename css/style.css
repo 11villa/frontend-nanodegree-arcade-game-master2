@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+.score-panel {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: blueviolet;
+    text-align: center;
+    
+    
+}
