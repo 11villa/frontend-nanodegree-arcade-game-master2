@@ -20,10 +20,11 @@ var Enemy = function(posX,posY,speedEnemy) {
     this.sprite = 'images/enemy-bug.png';
     this.x=posX;
     this.y=posY;
-    this.width = 60;
-    this.height = 60;
+    this.width = 80;
+    this.height = 70;
     this.speed=speedEnemy;
 };
+
 
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
@@ -149,19 +150,36 @@ function checkCollisions (object1, object2) {
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 
-let allEnemies = []; 
+//let allEnemies = []; 
 //create enemies
-let enemy1 = new Enemy(-400,50,2);
-let enemy2 = new Enemy(-500,250,0);
-let enemy3 = new Enemy(-100,100,1);
-let enemy4 = new Enemy(-100,150,0);
-let enemy5 = new Enemy(0,200,1);
-//add enemies to an array
-allEnemies.push(enemy1);
-allEnemies.push(enemy2);
-allEnemies.push(enemy3);
-allEnemies.push(enemy4);
-allEnemies.push(enemy5);
+//parameters for enemy 1
+const a = -400;
+const b = 50;
+const c = 2;
+//parameter for enemy 2
+const d = -500;
+const e = 250;
+const f = 0;
+//parameters for enemy 3
+const g = -100;
+const h = 100;
+const i = 1;
+//parameters for enemy 4
+const j = -100;
+const k = 150;
+const l = 0;
+//parameters for enemy 5
+const m = 0;
+const n = 200;
+const o = 1;
+
+const allEnemies = [
+    new Enemy(a, b, c),
+    new Enemy(d, e, f),
+    new Enemy(g,h,i),
+    new Enemy(j,k,l),
+    new Enemy(m,n,o)
+];
 
 //a player objet is instantiated
 let player = new Player();
